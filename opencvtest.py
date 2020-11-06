@@ -10,9 +10,9 @@ import cv2
 # construct the argument parse and parse the arguments
 ap = argparse.ArgumentParser()
 ap.add_argument("-p", "--prototxt", required=True,
-	help="path to Caffe 'deploy' prototxt file")
+	help="/home/pi/opendet/deploy.prototxt")
 ap.add_argument("-m", "--model", required=True,
-	help="path to Caffe pre-trained model")
+	help="/home/pi/opendet/squeezenet_v1.1.caffemodel")
 ap.add_argument("-c", "--confidence", type=float, default=0.2,
 	help="minimum probability to filter weak detections")
 args = vars(ap.parse_args())
